@@ -13,6 +13,9 @@ homepage = 'https://github.com/Daucloud/hugo-theme-void'
 tags = ['blog', 'responsive', 'personal', 'light', 'tailwind', 'minimal']
 features = ['responsive', 'tailwind css', 'blog', 'light mode', 'social icons', 'code highlighting', 'clean design']
 
+# If you have a running demo of the theme.
+demosite = "https://www.daucloud.com"
+
 # If the theme has a single author
 [author]
   name = 'Daucloud'
