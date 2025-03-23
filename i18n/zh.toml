@@ -159,3 +159,6 @@ other = "分享"
 
 [last_updated]
 other = "最后更新于"
+
+[load_comments]
+other = "加载评论"

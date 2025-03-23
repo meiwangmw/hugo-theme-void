@@ -162,3 +162,8 @@
   background-color: #ffffff;
   padding: 0;
 }
+
+/* 禁止Disqus广告 */
+div#disqus_thread iframe[sandbox] {
+  max-height: 0px !important;
+}

@@ -146,4 +146,7 @@ other = "Comments"
 other = "Share"
 
 [last_updated]
-other = "Last updated on" 
+other = "Last updated on"
+
+[load_comments]
+other = "Load Comments" 
