@@ -81,6 +81,35 @@
   @apply text-sm text-gray-600 mt-8 pt-6 border-t border-gray-200;
 }
 
+/* 添加脚注返回链接样式 */
+.prose .footnote-backref {
+  @apply ml-2 text-blue-600 no-underline hover:text-blue-800 transition-colors duration-200 text-base font-bold px-2 py-1 rounded hover:bg-blue-100;
+}
+
+/* 脚注引用样式 */
+.prose .footnote-ref {
+  @apply no-underline text-blue-600 hover:text-blue-800 transition-colors duration-200 font-bold;
+}
+
+/* 脚注高亮效果 */
+.prose .footnote-highlight {
+  @apply bg-yellow-200 transition-colors duration-500 px-2 py-1 rounded;
+}
+
+/* 脚注引用样式 */
+.prose sup[id^="fnref"] {
+  @apply text-blue-600;
+}
+
+/* 脚注列表样式 */
+.prose .footnotes ol {
+  @apply pl-5 space-y-2;
+}
+
+.prose .footnotes li {
+  @apply text-gray-700;
+}
+
 /* Code block enhancements */
 .code-block-container {
   @apply my-6 rounded-lg overflow-hidden border border-gray-200 shadow-md w-full;

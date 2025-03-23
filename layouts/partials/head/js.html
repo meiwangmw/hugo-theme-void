@@ -112,3 +112,36 @@
     });
   });
 </script>
+<!-- 脚注返回链接支持 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 处理脚注返回链接
+    const footnoteBacklinks = document.querySelectorAll('.footnote-backref');
+    
+    footnoteBacklinks.forEach(function(backlink) {
+      backlink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // 获取链接的href属性（格式为 #fnref:1 等）
+        const href = backlink.getAttribute('href');
+        
+        if (href) {
+          // 找到原文引用的元素
+          const target = document.querySelector(href);
+          
+          if (target) {
+            // 滚动到引用位置
+            target.scrollIntoView({ behavior: 'smooth' });
+            
+            // 高亮显示引用位置（可选）
+            target.classList.add('footnote-highlight');
+            setTimeout(function() {
+              target.classList.remove('footnote-highlight');
+            }, 2000);
+          }
+        }
+      });
+    });
+  });
+</script>
+
