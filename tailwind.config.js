@@ -3,20 +3,6 @@ export default {
   content: ["./layouts/**/*.html"],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Roboto", "Noto Sans SC", "sans-serif"],
-        serif: ["Georgia", "Cambria", "Times New Roman", "Times", "serif"],
-        mono: [
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          "Liberation Mono",
-          "Courier New",
-          "monospace",
-        ],
-        display: ["Roboto", "Noto Sans SC", "sans-serif"],
-        body: ["Roboto", "Noto Sans SC", "sans-serif"],
-      },
       typography: {
         DEFAULT: {
           css: {
