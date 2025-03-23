@@ -1,17 +1,17 @@
-name = 'Theme name'
+name = 'Void'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
+licenselink = 'https://github.com/Daucloud/hugo-theme-void/blob/main/LICENSE'
+description = 'A clean, modern Hugo blog theme built with Tailwind CSS'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://github.com/Daucloud/hugo-theme-void'
 
 # If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = 'https://daucloud.github.io/hugo-theme-void'
 
 # Taxonomy terms
-tags = ['blog', 'company']
-features = ['some', 'awesome', 'features']
+tags = ['blog', 'responsive', 'personal', 'light', 'tailwind', 'minimal']
+features = ['responsive', 'tailwind css', 'blog', 'light mode', 'social icons', 'code highlighting', 'clean design']
 
 # If the theme has multiple authors
 authors = [
@@ -21,11 +21,16 @@ authors = [
 
 # If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
+  name = 'Daucloud'
+  homepage = 'https://github.com/Daucloud'
 
 # If porting an existing theme
 [original]
   author = 'Name of original author'
   homepage = 'Website of original author'
   repo = 'https://github.com/owner/repo'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.87.0"
