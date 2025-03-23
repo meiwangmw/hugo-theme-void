@@ -1,16 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+SC:wght@200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import "tailwindcss";
 @source "hugo_stats.json";
 
-@theme {
-  --font-newsreader: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-noto-sc: "Noto Serif SC", serif;
-  --font-bilingual: ui-serif, Georgia, Cambria, "Times New Roman", Times,
-    "Noto Serif SC", serif;
-}
-
 /* 增强Markdown渲染样式 */
+@theme {
+  --font-noto-sc: "Noto Serif SC", serif;
+  --font-pt-serif: "PT Serif", serif;
+  --font-bilingual: "PT Serif", "Noto Serif SC", serif;
+}
 
 /* 表格样式增强 */
 .prose table {
