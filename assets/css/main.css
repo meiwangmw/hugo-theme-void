@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+SC:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
 
 @import "tailwindcss";
 @source "hugo_stats.json";
 
 /* 增强Markdown渲染样式 */
 @theme {
-  --font-libre-baskerville: "Libre Baskerville", serif;
-  --font-noto-sc: "Noto Serif SC", serif;
-  --font-bilingual: "Libre Baskerville", "Noto Serif SC", serif;
+  --font-bilingual:ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif, "Noto Serif SC";
 }
 
 /* 表格样式增强 */
