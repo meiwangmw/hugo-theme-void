@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap");
 
 @import "tailwindcss";
 @source "hugo_stats.json";
 
 /* 增强Markdown渲染样式 */
 @theme {
-  --font-bilingual:ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif, "Noto Serif SC";
+  --font-bilingual: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif,
+    "Noto Serif SC";
 }
 
 /* 表格样式增强 */
@@ -166,6 +167,7 @@
   line-height: 1.5rem;
   background-color: #ffffff;
   padding: 0;
+  font-size: 14px;
 }
 
 /* 禁止Disqus广告 */
