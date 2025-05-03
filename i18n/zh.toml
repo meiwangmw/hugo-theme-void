@@ -162,3 +162,6 @@ other = "最后更新于"
 
 [load_comments]
 other = "加载评论"
+
+[page_views]
+other = "阅读量"

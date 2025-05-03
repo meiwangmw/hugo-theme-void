@@ -94,6 +94,9 @@ other = "Contact"
 [reading_time]
 other = "min read"
 
+[page_views]
+other = "Page Views"
+
 [back_to_home]
 other = "Back to Home"
 
