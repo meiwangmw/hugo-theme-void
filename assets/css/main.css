@@ -5,8 +5,7 @@
 
 /* 增强Markdown渲染样式 */
 @theme {
-  --font-bilingual: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif,
-    "Noto Serif SC";
+  --font-bilingual: ui-serif, "Noto Serif SC", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 /* 表格样式增强 */
@@ -158,7 +157,7 @@
   @apply p-4 overflow-x-auto m-0 w-full;
   background-color: transparent;
   border: none;
-  color: #000000;
+  color: inherit;
 }
 
 .code-block-container pre code {
