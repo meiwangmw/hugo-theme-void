@@ -176,3 +176,8 @@
 div#disqus_thread iframe[sandbox] {
   max-height: 0px !important;
 }
+
+/* add margin between paragraphs */
+p + p {
+  margin-top: 5px;
+}
