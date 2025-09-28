@@ -180,3 +180,33 @@ div#disqus_thread iframe[sandbox] {
 p + p {
   margin-top: 5px;
 }
+
+/* add margin between paragraphs */
+p + p {
+  margin-top: 5px;
+}
+
+/* 社交媒体图标品牌色悬停效果 */
+.social-linkedin:hover {
+  color: #0077B5 !important;
+}
+
+.social-twitter:hover {
+  color: #000000 !important;
+}
+
+.social-facebook:hover {
+  color: #1877F2 !important;
+}
+
+.social-scholar:hover {
+  color: #4285F4 !important;
+}
+
+.social-umn:hover {
+  color: #FFCC33 !important;
+}
+
+.social-email:hover {
+  color: #EA4335 !important;
+}

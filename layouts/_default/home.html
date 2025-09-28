@@ -16,10 +16,10 @@
 
         <!-- 社交媒体图标区域 -->
         {{ if .Site.Params.social }}
-        <div class="mt-8 flex justify-center space-x-6">
+        <div class="mt-8 flex justify-center items-center space-x-6">
           <!-- LinkedIn -->
           {{ with .Site.Params.social.linkedin }}
-          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-700 transition-colors duration-200" aria-label="LinkedIn">
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 social-linkedin transition-colors duration-200 flex items-center" aria-label="LinkedIn">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
@@ -28,16 +28,16 @@
 
           <!-- Twitter -->
           {{ with .Site.Params.social.twitter }}
-          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-700 transition-colors duration-200" aria-label="Twitter">
-            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 social-twitter transition-colors duration-200 flex items-center" aria-label="X (formerly Twitter)">
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 1200 1227" aria-hidden="true">
+              <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
             </svg>
           </a>
           {{ end }}
 
           <!-- Facebook -->
           {{ with .Site.Params.social.facebook }}
-          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-700 transition-colors duration-200" aria-label="Facebook">
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 social-facebook transition-colors duration-200 flex items-center" aria-label="Facebook">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/>
             </svg>
@@ -46,16 +46,27 @@
 
           <!-- Google Scholar -->
           {{ with .Site.Params.social.scholar }}
-          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-700 transition-colors duration-200" aria-label="Google Scholar">
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 social-scholar transition-colors duration-200 flex items-center" aria-label="Google Scholar">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5.242 13.769L0 9.5 12 0l4.027 3.479L22 9.5l-5.242 4.269L12 24l-6.758-10.231zm6.758 4.231L18.5 9.5 12 3.857 5.5 9.5L12 18z"/>
             </svg>
           </a>
           {{ end }}
 
+          <!-- UMN -->
+          {{ with .Site.Params.social.umn }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="text-gray-500 social-umn transition-colors duration-200 flex items-center" aria-label="University of Minnesota">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 1920 1080" aria-hidden="true">
+              <path d="M1656.1,795.2l-307.9-511.9h84.8V16.6H920.4v266.7h84.8L887.6,478.9L770,283.4h84.8V16.6H342.2v266.7H427L119.1,795.2H9.2V1062H532V795.2h-93.9l160.4-266.7L660.7,632H601v266.7h573.1V632h-59.6l62.2-103.4l160.4,266.7h-93.9V1062h522.7V795.2H1656.1"/>
+              <path d="M1399.6,51.5v198.4h-111.1l349.1,580.3h95v198.3h-454.4V830.1h120.2L1177.5,463l-122.7,203.9h85.9v198.3H636V666.9h86L599.3,463L378.4,830.2h120.2v198.3H44.2V830.1h94.9l349.1-580.3H377.2V51.5h444.2v198.4H710.2l178.1,296.1l178.1-296.1H955.4V51.5H1399.6"/>
+              <path d="M1365.4,85.7v130H1228l390.2,648.7h80.1v129.9h-386V864.3h146.5l-281.3-467.7L994.3,701.1h112.2V831H670.2V701.1h112.2L599.3,396.6L317.9,864.3h146.5v129.9h-386V864.3h80.1l390.2-648.7H411.4v-130h375.8v130H649.8l238.6,396.6L1127,215.7H989.6v-130H1365.4"/>
+            </svg>
+          </a>
+          {{ end }}
+
           <!-- Email -->
           {{ with .Site.Params.social.email }}
-          <a href="mailto:{{ . }}" class="text-gray-500 hover:text-gray-700 transition-colors duration-200" aria-label="Email">
+          <a href="mailto:{{ . }}" class="text-gray-500 social-email transition-colors duration-200 flex items-center" aria-label="Email">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/>
               <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/>
