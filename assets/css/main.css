@@ -183,7 +183,7 @@ p + p {
 
 /* add margin between paragraphs */
 p + p {
-  margin-top: 5px;
+  margin-top: 1.75rem;
 }
 
 /* 社交媒体图标品牌色悬停效果 */
