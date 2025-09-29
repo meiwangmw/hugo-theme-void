@@ -2,10 +2,10 @@
   <div class="max-w-3xl mx-auto min-h-[70vh] flex items-center justify-center px-4 relative">
     <!-- 微妙的背景装饰 -->
     
-    <div class="w-full flex flex-row items-center gap-8">
+    <div class="w-full flex flex-col md:flex-row md:items-center gap-8">
       {{ with .Site.Params.avatar }}
-      <div class="w-1/2 max-w-[40%]">
-        <img src="{{ .url }}" alt="{{ $.Site.Title }}" class="w-full h-[400px] object-contain">
+      <div class="w-full md:w-1/2 md:max-w-[40%] flex justify-center">
+        <img src="{{ .url }}" alt="{{ $.Site.Title }}" class="w-full max-w-sm md:max-w-none md:w-full h-[300px] md:h-[400px] object-contain">
       </div>
       {{ end }}
       <div class="flex-1 text-left">
